@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Kotlin app 2</string>
+
+    <!-- Action bar titles -->
+    <string name="title_list_fragment">List of your products</string>
+    <string name="title_detail_update_fragment">Update product</string>
+    <string name="title_detail_new_product_fragment">New product</string>
+
+    <string name="high_priority">High priority</string>
+    <string name="normal_priority">Normal priority</string>
+    <string name="lower_priority">Lower priority</string>
+
+    <string name="upper_shelf">Upper shelf</string>
+    <string name="middle_shelf">Middle shelf</string>
+    <string name="lower_shelf">Lower shelf</string>
+
+    <string-array name="spinnerPriority">
+        <item>@string/high_priority</item>
+        <item>@string/normal_priority</item>
+        <item>@string/lower_priority</item>
+    </string-array>
+
+    <string-array name="spinnerShelf">
+        <item>@string/upper_shelf</item>
+        <item>@string/middle_shelf</item>
+        <item>@string/lower_shelf</item>
+    </string-array>
+</resources>

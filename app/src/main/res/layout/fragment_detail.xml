@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerNested"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_back">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+
+            android:id="@+id/detailedActivityName"
+            style="@style/style_detail_view_elements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textColorHint="@color/white"
+            android:background="@color/main_color_front"
+            android:hint="Name"
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/detailedActivityWeight"
+            style="@style/style_detail_view_elements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="30dp"
+            android:background="@color/main_color_front"
+            android:digits="1234567890"
+            android:textColorHint="@color/white"
+            android:hint="Weight in grams"
+            android:inputType="number"
+            android:paddingStart="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:boxStrokeWidth="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/detailedActivityName" />
+
+        <Spinner
+            android:theme="@style/style_detail_view_elements"
+            android:id="@+id/detailedSpinnerPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/spinner_back"
+            android:entries="@array/spinnerPriority"
+            android:paddingStart="5dp"
+            android:popupBackground="@color/main_color_front"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintTop_toBottomOf="@id/detailedActivityWeight"
+            tools:ignore="RtlSymmetry" />
+
+        <Spinner
+            android:theme="@style/style_detail_view_elements"
+            android:id="@+id/detailedSpinnerShelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_back"
+            android:entries="@array/spinnerShelf"
+            android:popupBackground="@color/main_color_front"
+            android:paddingStart="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintTop_toBottomOf="@id/detailedSpinnerPriority"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/detailedActivityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_shape"
+            android:text="save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailedSpinnerShelf" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
