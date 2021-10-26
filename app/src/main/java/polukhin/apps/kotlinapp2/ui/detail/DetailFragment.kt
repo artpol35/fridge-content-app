@@ -30,6 +30,8 @@ class DetailFragment : Fragment() {
     private var updateMode: Boolean = false
     private lateinit var currentProduct: Product
 
+    // change test
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
