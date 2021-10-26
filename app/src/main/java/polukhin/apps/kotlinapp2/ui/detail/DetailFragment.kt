@@ -31,6 +31,7 @@ class DetailFragment : Fragment() {
     private lateinit var currentProduct: Product
 
     // change test
+    // change test2
 
 
     override fun onCreateView(
